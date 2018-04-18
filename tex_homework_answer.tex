@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt]{article}
+
+\begin{document}
+\begin{center}
+{\Large コンピュータゼミ2016宿題}
+\end{center}
+\section{1章}
+私達の研究室ではおもにシステムやソフトウェアの信頼性に関する研究を行っ
+ています。おもにそれらを確率論によってモデル化し、解析することで信頼
+性の評価を行います。\par
+  具体的には以下の様な確率過程を用いることが多いです。
+
+\begin{itemize}
+\item NHPP
+\item CTMC
+\end{itemize}
+
+\section{2章}
+卒業論文や現行の作成のさいには\LaTeX を使って文章を作成します。\LaTeX 
+は数式などを含むような文章を綺麗に作成するための言語です。
+
+\section{3章}
+確率変数$X$が指数分布に従うとき、その分布関数$F_X(t)$と密度関数$f_X(t)$は、
+
+\begin{eqnarray}
+F_X(t)&=&1-e^{-\lambda t}\\
+f_X(t)&=&\lambda e^{-\lambda t}
+\end{eqnarray}
+となる。またその期待値は定義より、
+
+\begin{eqnarray}
+E[X]&=&\int_0^{\infty} tf_X(t)dt\nonumber \\
+&=&[(1-e^{-\lambda t})t]_0^{\infty}-\int_0^{\infty}(1-e^{-\lambda t})dt \nonumber \\
+&=&[(1-e^{-\lambda t})t]_0^{\infty}-[t+\frac{1}{\lambda}e^{-\lambda t}]_0^{\infty} \nonumber \\
+&=&\frac{1}{\lambda}
+\end{eqnarray}
+となる。（extra 宿題: 式(3)を導出してみよう ヒント:部分積分）
+
+\newpage
+
+\section{4章}
+表をつくることもできます
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+1 & 2 & 3 \\
+\hline
+$\alpha$ & $\beta$ & $\gamma$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
